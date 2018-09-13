@@ -1,4 +1,7 @@
 version: '3'
 services:
   runner:
+    environment:
+      - BROWSERSTACK_USERNAME
+      - BROWSERSTACK_ACCESS_KEY
     build: .
