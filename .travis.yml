@@ -1,13 +1,8 @@
-sudo: required
-language: minimal
-
-addons:
-  browserstack:
-    user: borgified1
-    access_key:
-      secure: "alWl8mQmVpVtFTHVAoAAjOqtrNj4ywNRyCkMbdtoCi93pAApiObGH2YO9pKUPsjzGZDFxKCuehVfcmJ2dbC9aWF0u3lz8PwwDH+RcTDW++cXr2HDtHorOzLFB6mK3YMqatFqGSMtGK/NL6ODFfMT/Z2d9UbX9ZnqOwe3+imMvCvP+nLrWwi2DpTY9PNiQvQM4d6y8iwml3b/uQ+ODi4GFO6Er84NBlKOPPhLv4GeMNkdNd8B9PAB9nxt+QdEaSgVJ8J29b3gTB9DaPGPyw856BBrr8fT+cT3TvkIDaXKgl5PT2S/24UtSZ4IzKWR4WZNeNAp7i1aqJcmtcb5yxOnnVPlUSv3n2C/LEUctenp3adpnCgg/nNfI6CdKdARUUXfB4VkE5lP+L/zQdAg+SE8AnCDlPFPFSXxBlQjT6aYzVzRszsfZid97kh98048bb7CW3Ye0ZWxFUB6rtAGaSx6plsV4VquH7UEmO3Ktwg4wjBEJvLyrKxLHEpwIjfbEfKdI9zeLsMqXaZpeelBxE+VNkpBQuDjO7HIhIHtRh6FiZs7Sf+uS5BnP3h3HV0daAe6VBSDQfmms3kzlWUOpUx+q4tcCAYVkAGjJv2yO2yR5zVojCIDW3+45zriW7nr6Iz6T6DR3TyoWgP4YISkQVfckdR6dfC4Ru12sxGvwQWCM1w="
+sudo: false
+language: python
 
 script:
-  - env
+  - pip install -r requirements.txt
+  - python test.py
 #  - docker-compose up -d
 #  - docker-compose down
