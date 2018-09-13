@@ -4,5 +4,3 @@ language: python
 script:
   - pip install -r requirements.txt
   - python test.py
-#  - docker-compose up -d
-#  - docker-compose down
