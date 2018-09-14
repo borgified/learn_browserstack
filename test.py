@@ -11,11 +11,11 @@ desired_cap = {
  'os_version': '7.0'
 }
 
-username=os.environ.get('BROWSERSTACK_USER')
-access_key=os.environ.get('BROWSERSTACK_KEY')
+username=os.environ.get('BROWSERSTACK_USERNAME')
+access_key=os.environ.get('BROWSERSTACK_ACCESS_KEY')
 
 driver = webdriver.Remote(
-    command_executor='http://{}:{}@hub.browserstack.com:80/wd/hub'.format(username,access_key),
+    command_executor='http://{}:{}@hub.browserstack.com:80/wd/hub'.format("borgified1",access_key),
     desired_capabilities=desired_cap)
 
 driver.get("http://www.bing.com")

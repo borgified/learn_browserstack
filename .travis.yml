@@ -4,7 +4,8 @@ language: python
 addons:
   browserstack:
     username: borgified1
-    access_key: 5njsGyzgj6JV2hwyHutq
+    access_key:
+      secure: "G67inLweOP0a7Y5b1nXFpajSf6+owAT0iwz7gVu2020uXF9U376jS0xZg/R+AtZjiaRvX5ROq63HMUdqwdEEaLoExM1KNbanAHlxMht7SyjVWUD7/5J5bR2Z9EEnJFbtaPPVe/mBuDM1E4B6+0fhjbjWQZzEGPvfH4phAn/X6MJztx0MMgcAw70T3XwOgdytrmERpjiX2ZuXiLtAikd8QYnXJvf6y6zLprChJxHb2Xx6Js68+DVV91i0jhf+tlU2861J0e2qR6ztJ4s8WnlM98uMbtqHYEP74dJAFwSa+c7dpKewWJc4m7HUDXX5mrWAtA+TlObWteV4MVOVBX16ryYu+MNyWYc/Qi81QKkvxI+0HyvztQcqiNEFakw/Zb8fEIe8j9gQKy25aMyvQT+zn94nm1FisIJ3r64EcL+YmdbhuUAAKCrArYlMG09930JXl59cEpWzN+3tIW40r/YpFN26ZL7ONQ+yCHMt1GTomnPSFa7uzmBGgmuRKMySiLM8cLioi8q4XxwDxvsrJYBFJInmEWuGfhNtzD5cqPrtDcoO0ndf0u791jdx317bFaScOgTtU6keD3dA+4QK/8fYAzejS40B++o4ngL2IXEmuOgYEEy6pMHqjZkNVhfHD7Lz0MeXspvWujK4b5kxiLZX3lSP1ZZbqJxoxtGb16pL9Iw="
 
 script:
   - env
