@@ -1,6 +1,13 @@
 sudo: false
 language: python
 
+addons:
+  browserstack:
+    username: "borgified1"
+    access_key:
+      secure: "ry1FegupnBpkisgoyLE7WQ+u94lxxzfsONX3PZJn2TPjZWTteTbwCSZDaMrBeJ+ynYc6Aj03NCzppuwzanZ057SZrp/sGq5SzgGI3zVP2gL+cdoJYP0uRk+p1cl6FG6J7s638SMhVwy6iAEdc0S0RXeXFhsz8asHVUFx/AQfaDo3MokFfXJmIwVujDxzYVRJjbcMWoQoUeQgzKqOLETlY0iuTQcPqISGKBBQsiBYPr0xO76KlldIkX6qgeOw7I+/uDxQbJFNHY7I+/hBjKNeoTv5QHQqRyFKdf5spYJWmvW4lKN+yyHkNd1YBoROxWKT0MMKK/vr2XRoNlCwaMA+PZwNpWhvo/jSwuPN3CEuLY1rjzxCqqI3Ha083Uz9c8rJaD5u/yRiE5flgVXZa+dcxznzDqSAARgENjuzKx9ptODuW4XPytJ4VecymE54jWQokLC6+05gSHGzpE6W5RxQuO8wnaQY2jRpMK0rcuC6CqrmCBPS4Xh++oHG2RjVDom9DdGHxkwRwrbFO+EUTBMVP4bATphJrGbQkdANtEm1v87gSnQA6iIZJWxsc5Rt168PeeNpRCbT6ojA5bb872eltTfcIys9443LGvMDyd7YcuE0K8hsNGCXasv2E/JzO43yWLmHicYjlEj6GaA0F3zGkoOvhDFm2W89oqvPkxgxhE0="
+
 script:
+  - echo $BROWSERSTACK_LOCAL_IDENTIFIER
   - pip install -r requirements.txt
   - python test.py
